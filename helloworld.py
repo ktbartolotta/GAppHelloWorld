@@ -5,7 +5,7 @@ import webapp2
 
 class MainPage(webapp2.RequestHandler):
   def get(self):
-	users = users.get_current_user()
+	user = users.get_current_user()
 	
 	if user:
 		self.response.headers['Content-Type'] = 'text/plain'
